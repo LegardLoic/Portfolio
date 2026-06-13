@@ -12,8 +12,8 @@ export function HobbyVideoSection() {
         <p className="eyebrow">Sélection YouTube</p>
         <h2 id="hobby-videos-title">Vidéos piano</h2>
         <p>
-          La structure est prête pour accueillir des vidéos YouTube réelles dès que les
-          liens seront fournis. En attendant, les cartes restent propres et explicites.
+          Trois interprétations autour d'univers qui comptent pour moi, entre anime,
+          jeu vidéo et collaboration piano/voix.
         </p>
       </div>
 
