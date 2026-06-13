@@ -21,14 +21,14 @@ export function PianoSection() {
           <span>Pratique créative</span>
           <h3>{hobbies.mainHobby.subtitle}</h3>
           <p>
-            La musique apporte une respiration plus personnelle au portfolio. Elle
+            La musique apporte une respiration plus personnelle au parcours. Elle
             montre une facette créative, structurée et sensible, complémentaire au
             travail technique présenté dans les projets.
           </p>
           <p className="todo-note">
             {displayPlaceholderText(
               hobbies.mainHobby.practiceNote,
-              "Détails musicaux à compléter.",
+              "Détails musicaux à préciser.",
             )}
           </p>
         </div>

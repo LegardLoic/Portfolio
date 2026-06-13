@@ -16,7 +16,7 @@ export function CvEducation() {
             <p>
               {displayPlaceholderText(
                 item.description,
-                "Formation, certification ou parcours exact à ajouter.",
+                "Détail de formation à préciser.",
               )}
             </p>
           </article>

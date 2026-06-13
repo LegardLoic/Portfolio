@@ -22,7 +22,7 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
         <ProjectHero project={project} />
         <section className="project-section">
           <div className="placeholder-band">
-            <p>Contenu case study à ajouter pour ce projet.</p>
+            <p>Cette page sera enrichie dès que le projet aura suffisamment de matière à montrer.</p>
             <ButtonLink to="/" variant="ghost">
               Retour à l'accueil
             </ButtonLink>
@@ -38,7 +38,7 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
       <ProjectOverview project={project} />
       <ProjectNarrative caseStudy={caseStudy} />
       <ProjectFeatureGrid
-        description="Les fonctionnalités ci-dessous résument les systèmes principaux déjà identifiés pour ce projet."
+        description="Les éléments qui donnent sa forme au projet aujourd'hui, entre usage, interaction et logique métier."
         eyebrow="Fonctionnalités"
         items={caseStudy.features}
         title="Fonctionnalités principales"
@@ -46,10 +46,10 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
       <ProjectTechStack stack={project.stack} />
       {caseStudy.showcase ? <ProjectShowcaseStrip items={caseStudy.showcase} /> : null}
       <ProjectFeatureGrid
-        description="Les points techniques qui rendent le projet intéressant à présenter dans un portfolio."
+        description="Les sujets sur lesquels le projet demande de vrais choix : architecture, lisibilité, progression et qualité d'expérience."
         eyebrow="Défis techniques"
         items={caseStudy.challenges}
-        title="Problèmes intéressants"
+        title="Ce qui demande du recul"
       />
       <ProjectRoadmap learnings={caseStudy.learnings} roadmap={caseStudy.roadmap} />
       <ProjectGallery gallery={caseStudy.gallery} />

@@ -37,12 +37,12 @@ export function StudyProjectDetails({ project, index }: StudyProjectDetailsProps
           </div>
         ) : (
           <div
-            aria-label={`Visuel à venir pour ${project.title}`}
+            aria-label={`Visuel en préparation pour ${project.title}`}
             className="study-project__visual"
             role="img"
           >
             <span>{project.title}</span>
-            <strong>Capture à venir</strong>
+            <strong>Visuel en préparation</strong>
           </div>
         )}
       </div>
@@ -141,19 +141,19 @@ export function StudyProjectDetails({ project, index }: StudyProjectDetailsProps
                       src={item.image}
                     />
                   ) : (
-                    <div role="img" aria-label={`${item.title} - capture à venir`}>
-                      <span>Capture à venir</span>
+                    <div role="img" aria-label={`${item.title} - visuel en préparation`}>
+                      <span>Visuel en préparation</span>
                     </div>
                   )}
                   <h4>{item.title}</h4>
-                  <p>{displayPlaceholderText(item.description, "Capture à ajouter.")}</p>
+                  <p>{displayPlaceholderText(item.description, "Visuel prévu lorsque le projet sera prêt à être montré.")}</p>
                 </article>
               ))}
             </div>
           </section>
         </>
       ) : (
-        <p className="todo-note">Détail de ce projet d'étude à ajouter.</p>
+        <p className="todo-note">Cette présentation sera complétée quand le projet aura été mieux documenté.</p>
       )}
     </article>
   );

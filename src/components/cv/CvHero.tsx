@@ -27,7 +27,7 @@ export function CvHero() {
               Télécharger le CV
             </ButtonLink>
           ) : (
-            <span className="cv-disabled-action">CV PDF à ajouter</span>
+            <span className="cv-disabled-action">CV PDF bientôt disponible</span>
           )}
         </div>
       </div>

@@ -28,7 +28,7 @@ export const projects: PortfolioProject[] = [
     status: "in-progress",
     stack: ["React", "TypeScript", "Vite"],
     description:
-      "Projet personnel ambitieux autour d'un auto-battler de cartes, conçu pour explorer la logique de gameplay, la gestion d'état complexe, le drag and drop et les animations de combat dans une application React.",
+      "Un auto-battler de cartes développé avec React, où l'interface doit gérer des règles de jeu, du drag and drop, une IA et des combats animés sans perdre en lisibilité.",
     highlights: [
       "Système de cartes et familles",
       "Mode IA",
@@ -52,7 +52,7 @@ export const projects: PortfolioProject[] = [
       objective:
         "Créer une expérience de jeu structurée autour de cartes, familles, synergies, phases de shop et combats automatisés.",
       overview:
-        "BrawlCards: Origins est un projet personnel de jeu de cartes pensé comme un produit complet. Il met en avant une logique front-end avancée : gestion d'état, enchaînement de phases, interactions drag and drop, simulation de combat, IA et familles de cartes avec mécaniques propres.",
+        "BrawlCards: Origins est né de l'envie de pousser React sur un terrain plus ludique qu'une interface classique. Le projet mélange règles de cartes, enchaînement de phases, drag and drop, simulation de combat, IA et familles avec mécaniques propres.",
       goals: [
         "Concevoir une boucle de jeu claire entre shop, préparation et combat.",
         "Construire un système de cartes extensible avec familles, effets et synergies.",
@@ -130,7 +130,7 @@ export const projects: PortfolioProject[] = [
         "Préparer les données de jeu pour faciliter l'équilibrage et l'ajout de nouvelles cartes.",
       ],
       roadmap: [
-        "Ajouter de vraies captures et une vidéo courte de gameplay.",
+        "Ajouter une courte vidéo de gameplay pour montrer le rythme d'une partie.",
         "Stabiliser l'équilibrage des familles et documenter les mécaniques clés.",
         "Renforcer l'IA pour créer des parties plus variées.",
         "Améliorer les animations et les feedbacks de combat.",
@@ -237,7 +237,7 @@ export const projects: PortfolioProject[] = [
       goals: [
         "Créer une boucle jouable entre cultiver, vendre, crafter, explorer, combattre, progresser et recommencer plus fort.",
         "Relier la ferme, le village et la tour pour que chaque système ait un impact concret sur les autres.",
-        "Construire une base technique maintenable capable d'accueillir inventaire, équipement, dialogues, sauvegarde, combat et progression.",
+        "Construire une structure technique capable d'accueillir inventaire, équipement, dialogues, sauvegarde, combat et progression sans devenir difficile à faire évoluer.",
         "Préparer une expérience claire pour un public casual/midcore, avec une lecture simple mais des systèmes assez riches pour durer.",
       ],
       features: [
@@ -329,14 +329,14 @@ export const projects: PortfolioProject[] = [
         },
       ],
       learnings: [
-        "Structurer un projet Unity ambitieux en systèmes isolés, capables de communiquer sans devenir interdépendants.",
+        "Structurer un projet Unity dense en systèmes isolés, capables de communiquer sans devenir interdépendants.",
         "Penser un jeu comme un produit complet : gameplay loop, UI, feedbacks, progression, contenu, sauvegarde et workflow de production.",
         "Construire des systèmes data-driven pour accélérer l'ajout de contenu et réduire le setup manuel.",
         "Travailler la lisibilité d'interfaces complexes comme l'inventaire, l'équipement, les shops, le crafting et le combat.",
         "Relier narration, progression et game design pour que les victoires du joueur aient des conséquences visibles sur le monde.",
       ],
       roadmap: [
-        "Ajouter des captures réelles de la ferme, du combat, de l'inventaire et du village dans cette page portfolio.",
+        "Documenter les prochaines avancées avec des captures de la ferme, du combat, de l'inventaire et du village.",
         "Polisher les 10 premiers étages de la tour et le premier boss majeur du MVP.",
         "Renforcer les quêtes, les flags narratifs et les transformations visibles du village.",
         "Équilibrer l'économie entre récoltes, crafting, équipement, loot et progression de personnage.",

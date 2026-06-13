@@ -50,7 +50,7 @@ export const cv = {
   headline:
     "Profil web expérimenté, avec 15 ans d'expérience en entreprise, spécialisé dans la maintenance, l'évolution de sites, la coordination technique et la création d'interfaces web modernes.",
   summary:
-    "Parcours long en environnement professionnel, avec une base solide en gestion quotidienne de sites web, évolution de contenus, compréhension des besoins métier et progression vers des responsabilités de Technical Leader. Les projets récents montrent une montée en compétence moderne autour de React, TypeScript, Symfony et d'architectures front-end plus structurées.",
+    "J'ai longtemps travaillé au contact de sites en production : contenus, corrections, évolutions, besoins métier et contraintes du quotidien. Cette expérience m'a progressivement amené vers un rôle plus technique, avec un intérêt marqué pour React, TypeScript, Symfony et les architectures front-end plus propres.",
   stats: [
     {
       value: `${profile.experience.totalYears}`,
@@ -70,7 +70,7 @@ export const cv = {
     {
       value: `${projects.length + studyProjects.length}`,
       label: "projets présentés",
-      description: "Projets personnels et d'étude documentés dans le portfolio.",
+      description: "Projets personnels et d'étude présentés avec contexte, choix techniques et captures.",
     },
   ] satisfies CvStat[],
   experiences: [

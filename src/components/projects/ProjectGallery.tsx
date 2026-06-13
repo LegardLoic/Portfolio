@@ -6,12 +6,18 @@ type ProjectGalleryProps = {
 };
 
 export function ProjectGallery({ gallery }: ProjectGalleryProps) {
+  const hasRealImages = gallery.some((item) => Boolean(item.image));
+
   return (
     <section className="project-section" aria-labelledby="project-gallery-title">
       <div className="section__header">
         <p className="eyebrow">Galerie</p>
         <h2 id="project-gallery-title">Captures et visuels</h2>
-        <p>Les blocs sont prêts à recevoir de vraies captures lorsque les visuels seront fournis.</p>
+        <p>
+          {hasRealImages
+            ? "Quelques écrans pour voir le projet tel qu'il existe, avec son interface, son ambiance et ses systèmes."
+            : "Les visuels seront ajoutés lorsque le projet aura des captures assez propres pour être partagées."}
+        </p>
       </div>
 
       <div className="project-gallery-grid">
@@ -30,16 +36,16 @@ export function ProjectGallery({ gallery }: ProjectGalleryProps) {
               />
             ) : (
               <div
-                aria-label={`${item.title} - capture à venir`}
+                aria-label={`${item.title} - visuel en préparation`}
                 className="project-gallery-card__placeholder"
                 role="img"
               >
-                <span>Capture à venir</span>
+                <span>Visuel en préparation</span>
               </div>
             )}
             <div>
               <h3>{item.title}</h3>
-              <p>{displayPlaceholderText(item.description, "Capture à ajouter.")}</p>
+              <p>{displayPlaceholderText(item.description, "Visuel prévu lorsque le projet sera prêt à être montré.")}</p>
             </div>
           </article>
         ))}

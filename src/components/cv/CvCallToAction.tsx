@@ -10,7 +10,7 @@ export function CvCallToAction() {
     <section className="cv-cta" aria-labelledby="cv-cta-title">
       <div>
         <p className="eyebrow">Contact et suite</p>
-        <h2 id="cv-cta-title">Explorer les preuves concrètes du parcours</h2>
+        <h2 id="cv-cta-title">Voir le travail derrière le parcours</h2>
         <p>
           Le CV donne la synthèse. Les pages projets montrent la pratique, les choix techniques
           et la progression récente sur des interfaces modernes.
@@ -27,7 +27,7 @@ export function CvCallToAction() {
             LinkedIn
           </ButtonLink>
         ) : (
-          <span className="cv-disabled-action">LinkedIn à ajouter</span>
+          <span className="cv-disabled-action">LinkedIn non disponible pour le moment</span>
         )}
         {hasCvPdf ? (
           <ButtonLink href={cv.cvPdfUrl} variant="ghost">

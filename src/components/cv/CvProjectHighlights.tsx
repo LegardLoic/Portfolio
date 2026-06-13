@@ -8,7 +8,7 @@ export function CvProjectHighlights() {
       <div className="section__header">
         <p className="eyebrow">Projets significatifs</p>
         <h2 id="cv-projects-title">Projets à découvrir</h2>
-        <p>Un pont direct entre le CV et les preuves concrètes du portfolio.</p>
+        <p>Des exemples visibles pour compléter le parcours avec du concret : interfaces, logique métier et architecture.</p>
       </div>
 
       <div className="cv-project-grid">

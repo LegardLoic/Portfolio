@@ -16,7 +16,7 @@ export function OtherHobbies() {
       <div className="other-hobbies__grid">
         {hobbies.otherHobbies.map((hobby) => (
           <article className="other-hobby-card" key={hobby.title}>
-            <h3>{displayPlaceholderText(hobby.title, "Autre centre d'intérêt à ajouter")}</h3>
+            <h3>{displayPlaceholderText(hobby.title, "Autre centre d'intérêt en préparation")}</h3>
             <p>{displayPlaceholderText(hobby.description)}</p>
           </article>
         ))}

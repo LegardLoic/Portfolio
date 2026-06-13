@@ -58,7 +58,9 @@ export function ProjectHero({ project }: ProjectHeroProps) {
 
       <div
         aria-label={
-          visualImage ? `Visuel du projet ${project.title}` : `Visuel à venir pour ${project.title}`
+          visualImage
+            ? `Visuel du projet ${project.title}`
+            : `Visuel en préparation pour ${project.title}`
         }
         className="project-hero__visual"
         role="img"
@@ -81,12 +83,12 @@ export function ProjectHero({ project }: ProjectHeroProps) {
               {visualImage ? (
                 <img alt="" src={visualImage} />
               ) : (
-                <strong>Capture à venir</strong>
+                <strong>Visuel en préparation</strong>
               )}
               <p>
                 {displayPlaceholderText(
                   project.caseStudy?.objective,
-                  "Objectif projet à compléter.",
+                  "Objectif du projet en cours de clarification.",
                 )}
               </p>
             </>

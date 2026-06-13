@@ -37,7 +37,7 @@ export function Footer() {
                       {social.label}
                     </a>
                   ) : (
-                    <span>{social.label} - lien à ajouter</span>
+                    <span>{social.label} - lien non disponible pour le moment</span>
                   )}
                 </li>
               ))}

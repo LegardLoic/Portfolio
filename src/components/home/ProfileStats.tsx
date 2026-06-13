@@ -5,7 +5,7 @@ export function ProfileStats() {
   return (
     <Section
       className="profile-stats-section"
-      description="Des repères concrets pour situer l'expérience, le rôle et les projets déjà présentés dans le portfolio."
+      description="Quelques chiffres pour comprendre le parcours, le rôle tenu en entreprise et les projets présentés ici."
       eyebrow="Parcours"
       title="Chiffres clés"
     >
@@ -23,4 +23,3 @@ export function ProfileStats() {
     </Section>
   );
 }
-

@@ -66,7 +66,7 @@ export const homeCarouselSlides: HomeSlide[] = [
     eyebrow: "Parcours professionnel",
     title: "15 ans d'expérience web",
     text:
-      "Un parcours construit entre production, maintenance, évolution de sites, pilotage technique et projets web modernes.",
+      "Un parcours de terrain, entre maintenance de sites, évolutions concrètes, suivi de production et prise de recul technique.",
     ctaLabel: "Voir le CV",
     ctaTo: "/cv",
     tone: "violet",
@@ -80,9 +80,9 @@ export const homeCarouselSlides: HomeSlide[] = [
   {
     id: "personal-projects",
     eyebrow: "Projets personnels",
-    title: "Des projets complets, pensés comme des produits",
+    title: "Des projets qui vont au bout des idées",
     text:
-      "Je conçois des expériences interactives mêlant gameplay, interfaces, logique métier et identité visuelle.",
+      "Je travaille des expériences interactives où l'interface, les règles, la progression et l'identité visuelle avancent ensemble.",
     ctaLabel: "Explorer les projets",
     ctaTo: "/projects/brawlcards-origins",
     tone: "cyan",
@@ -157,7 +157,7 @@ export const buildFocusItems: BuildFocusItem[] = [
   {
     title: "Architecture front-end",
     description:
-      "Une base claire, des données séparées du rendu et des décisions techniques adaptées au périmètre réel.",
+      "Une structure simple à lire, des données séparées du rendu et des choix techniques adaptés au vrai périmètre du projet.",
   },
   {
     title: "Maintenance et évolution",
@@ -173,9 +173,9 @@ export const buildFocusItems: BuildFocusItem[] = [
 
 export const homeCta = {
   eyebrow: "Passer à la suite",
-  title: "Un portfolio pensé pour évoluer avec les projets.",
+  title: "Un espace pour suivre ce que je construis.",
   description:
-    "Cette base peut maintenant accueillir des captures, des pages projets détaillées, un CV complet et des contenus créatifs mieux illustrés.",
+    "Les pages projets, le CV et la partie créative donnent une vision plus complète du parcours, du code et des univers que je développe.",
   primaryCta: {
     label: "Voir les projets",
     to: "/projects/brawlcards-origins",

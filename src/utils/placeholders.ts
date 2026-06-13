@@ -12,7 +12,7 @@ export function isPlaceholderText(value?: string) {
 
 export function displayPlaceholderText(
   value?: string,
-  fallback = "Information à compléter",
+  fallback = "Information à venir",
 ) {
   if (!value) {
     return fallback;
