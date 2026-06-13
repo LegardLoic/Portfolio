@@ -1,7 +1,9 @@
+import { useState } from "react";
 import type { PortfolioProject } from "../../types/content";
 import { displayPlaceholderText } from "../../utils/placeholders";
 import { projectStatusLabels } from "../projects/projectLabels";
 import { Badge } from "../ui/Badge";
+import { ImageLightbox, type LightboxImage } from "../ui/ImageLightbox";
 
 type StudyProjectDetailsProps = {
   project: PortfolioProject;
@@ -12,6 +14,18 @@ export function StudyProjectDetails({ project, index }: StudyProjectDetailsProps
   const caseStudy = project.caseStudy;
   const titleId = `study-project-${project.slug}`;
   const visualImage = project.coverImage ?? project.heroImage;
+  const [activeImage, setActiveImage] = useState<LightboxImage>();
+  const openImage = (item: NonNullable<typeof caseStudy>["gallery"][number]) => {
+    if (!item.image) {
+      return;
+    }
+
+    setActiveImage({
+      description: item.description,
+      src: item.image,
+      title: item.title,
+    });
+  };
 
   return (
     <article className="study-project" aria-labelledby={titleId}>
@@ -130,16 +144,24 @@ export function StudyProjectDetails({ project, index }: StudyProjectDetailsProps
               {caseStudy.gallery.map((item) => (
                 <article className="study-gallery-card" key={item.title}>
                   {item.image ? (
-                    <img
-                      alt={item.title}
-                      className={
-                        item.fit === "contain"
-                          ? "study-gallery-card__image study-gallery-card__image--contain"
-                          : "study-gallery-card__image"
-                      }
-                      loading="lazy"
-                      src={item.image}
-                    />
+                    <button
+                      aria-label={`Voir ${item.title} en plein écran`}
+                      className="gallery-image-button"
+                      onClick={() => openImage(item)}
+                      type="button"
+                    >
+                      <img
+                        alt={item.title}
+                        className={
+                          item.fit === "contain"
+                            ? "study-gallery-card__image study-gallery-card__image--contain"
+                            : "study-gallery-card__image"
+                        }
+                        loading="lazy"
+                        src={item.image}
+                      />
+                      <span>Agrandir</span>
+                    </button>
                   ) : (
                     <div role="img" aria-label={`${item.title} - visuel en préparation`}>
                       <span>Visuel en préparation</span>
@@ -155,6 +177,7 @@ export function StudyProjectDetails({ project, index }: StudyProjectDetailsProps
       ) : (
         <p className="todo-note">Cette présentation sera complétée quand le projet aura été mieux documenté.</p>
       )}
+      <ImageLightbox image={activeImage} onClose={() => setActiveImage(undefined)} />
     </article>
   );
 }
